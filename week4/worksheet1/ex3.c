@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(){
-    int bufferLength = 255;
+    int bufferLength = 128;
     char buffer[bufferLength];
     int size = 0;
     float total = 0;
@@ -22,6 +22,7 @@ int main(){
         size+=1;
     }
     float avg = total / size;
+    printf("%f\n%d\n%f\n",total,size,avg);
     fprintf(file, "%f\n", avg);
     fclose(file);
     return 0;
