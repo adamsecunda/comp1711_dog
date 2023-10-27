@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+
+typedef long long int mark_t;
+
 struct student{
     char name[20];
     char student_id [11];
