@@ -1,6 +1,4 @@
 #include <stdio.h>
-
-
 typedef long long int mark_t;
 
 struct student{
@@ -22,4 +20,5 @@ int main(){
     STUDENT ss = {"Foo Bar", "1234564", 22};
     printf("%s\n", ss.name);
     return 0;
+    
 }
