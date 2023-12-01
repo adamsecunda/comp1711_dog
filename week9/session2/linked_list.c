@@ -24,8 +24,9 @@ void add_new_node(node* linked_list){
     }
     linked_list->next  = (node*) malloc(sizeof(node));
     int val;
-    printf("Enter a value for the node");
-    scanf("%d", linked_list->next->value);
+    printf("Enter a value for the node: ");
+    scanf("%d", &(linked_list->next->value));
+    linked_list->next->next = NULL;
 }
 
 
@@ -82,6 +83,7 @@ int main()
 
     // this will be our linked list from now on.
     node* linked_list = &first;
+    add_new_node(linked_list);
 
     printf("%d\n", length(linked_list));
 }
